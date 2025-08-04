@@ -47,8 +47,6 @@ class PeriodicalRunner : public std::enable_shared_from_this<PeriodicalRunner> {
   void RunFnPeriodically(std::function<void()> fn, uint64_t period_ms, std::string name)
       ABSL_LOCKS_EXCLUDED(mutex_);
 
-  void Stop();
-
  private:
   explicit PeriodicalRunner(instrumented_io_context &io_service);
 
