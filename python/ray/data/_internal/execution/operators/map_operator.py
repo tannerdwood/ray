@@ -31,7 +31,6 @@ from ray.data._internal.execution.interfaces import (
     PhysicalOperator,
     RefBundle,
     TaskContext,
-    OperatorOptions,
 )
 from ray.data._internal.execution.interfaces.physical_operator import (
     DataOpTask,
@@ -59,6 +58,7 @@ from ray.data.block import (
     to_stats,
 )
 from ray.data.context import DataContext
+from ray.data.operation_options import OperatorOptions
 from ray.util.scheduling_strategies import NodeAffinitySchedulingStrategy
 
 logger = logging.getLogger(__name__)
